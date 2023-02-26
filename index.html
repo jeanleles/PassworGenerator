@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="shortcut icon" href="images/password-fav.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Rubik+Mono+One&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <div class="generator-box">
+            <h2>Password Generator</h2>
+            <div class="display">
+                <input type="text" readonly class="password" id="password">
+                <div class="tooltip">
+                    <span class="myTooltip">Copiado</span>
+                    <button class="copy"><img src="./images/copy.png" alt="copy"></button>
+                </div>
+            </div>
+            <div class="options">
+                <form>
+                    <label for="lengthPassword">Tamanho</label>
+                    <input type="number" id="length" max="80" min="6" value="20" required><br>
+                    <input type="checkbox" id="lowercase" name="lowercase" value="lowercase">
+                    <label for="lowercase"> Letras minúsculas</label><br>
+                    <input type="checkbox" id="uppercase" name="uppercase" value="uppercase">
+                    <label for="uppercase"> Letras maiúsculas</label><br>
+                    <input type="checkbox" id="numbers" name="numbers" value="numbers">
+                    <label for="numbers"> Números</label><br>
+                    <input type="checkbox" id="symbols" name="symbols" value="symbols">
+                    <label for="symbols"> Símbolos</label>
+                </form>
+                <button class="btn-generate">Gerar Password</button>
+            </div>
+        </div>
+        <!-- <div class="tips-password">
+            <h2>Dicas de senha</h2>
+            <ul>
+                <li>Uma senha forte deve ter 16 carateres ou mais.</li>
+                <li>Uma senha forte deve ter uma combinação de letras maiúculas e minúsculas, númreros e caracteres especiais.</li>
+                <li>Uma senha não deve incluir nenhuma informação sobre o usuário, tais como o nome do usuário, telefone, data de nascimento.</li>
+                <li>Uma senha não deve conter letras ou números consecutivos.</li>
+                <li>Uma senha não deve ser ou ter a palavra “password”.</li>
+                <li>Uma senha não deve ser igual ao seu usuário.</li>
+                <li>Uma senha não deve ser a mesma letra ou número repetido.</li>
+                <li>Uma senha não deve ser usada em várias contas. Cada conta deve ser a sua própria senha.</li>
+            </ul>
+        </div> -->
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
